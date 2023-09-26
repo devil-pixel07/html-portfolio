@@ -1,0 +1,234 @@
+       /* css Reset */
+*{
+    margin: 0;
+    padding: 0;
+    color: darkred;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+       /* Css variable */
+  
+ :root{
+    --navbar-height:59px;
+ }   
+       /* Navigation bar    */
+#navbar{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    position:sticky;
+    top: 0px;
+}
+
+/*Nagivation : logo and images */
+#logo{
+    margin: 34px 45px;
+    height: 25px;
+}
+#logo img{
+    margin: 3px 6px;
+    height: 59px;
+}
+
+/* Nagivation :list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{                /*psudue selector*/
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;       /*by default inline*/
+    padding: 6px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 6, 10);
+    border: 2px solid red;
+    
+}
+
+/* Home Sectiom */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 205px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+
+}
+
+#home p{
+    color: rgb(251, 255, 252);
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: cursive;
+}
+
+#home::before{              /*sudue selector*/
+    content: "";
+    background: url("../food1.jpg") no-repeat center center/cover ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 580px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.90;
+
+
+}
+ /* Services section  */
+
+ #services{
+    margin: 36px;
+    display: flex;
+ }
+ #services .box{
+    border: 2px solid rgb(227, 9, 9);
+    padding: 35px;
+    margin: 20px;
+    background-color: rgba(9, 2, 2, 0.47);
+    color: white;
+ }
+ #services .box img{
+    height: 170px;
+    margin: auto;
+    display: block;
+ }
+ #services .btn p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ #services{}
+ #services{}
+
+          /* clients sections */
+#clients-section{
+    position: relative;
+    
+
+}
+#clients-section:before{
+      content: "";
+      position: absolute;
+      background: url('food3.jpg');
+      width: 100%;
+      height: 90%;
+      z-index: -1;
+      opacity: 0.90;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients-item{
+    padding: 29px ;
+    margin: 12px;
+}
+#clients img{
+    height: 130px;
+}
+
+    /* Contact section  */
+
+#contact{
+    position: relative;
+} 
+#contact:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.07;
+    background: url('coke1.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+#contact-box form{
+    width: 50%;
+
+}
+#contact-box label{
+    font-size: 1.9rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 22px;
+}
+
+      /* Utility class */
+ .h-primary{
+    font-size: 3rem;
+    padding: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }  
+ .h-secondary{
+    font-size: 3rem;
+    padding: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }   
+
+ .btn{
+          padding: 8px 20px;
+          border: 2px solid red;
+          background-color: rgb(104, 95, 95);
+          margin: 17px;
+          cursor: pointer;
+          
+ }
+
+ .center{
+    text-align: center;
+ }
+ .btn:hover{
+    border-radius: 25px;
+    color: rgb(254, 254, 255);
+    background-color: black;
+ }
+
+     
+
